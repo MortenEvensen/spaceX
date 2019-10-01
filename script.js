@@ -1,3 +1,22 @@
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
+var countDown = new Date("Oct 16, 2019 20:00:00").getTime();
+
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    var timeDifference = countDown - now;
+    
+    var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    
+    document.getElementById("countdown").innerHTML = "<p>Next launch into space: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s </p>";
+      if (timeDifference < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
 // Fetch api
 
 var request = new XMLHttpRequest(); 
@@ -56,6 +75,8 @@ request2.onload = function() {
     }
 request2.send();
 
+
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -64,5 +85,4 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-
 
