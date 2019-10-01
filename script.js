@@ -17,7 +17,7 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-// Fetch api
+// Fetch api with upcomming launches
 
 var request = new XMLHttpRequest(); 
 request.open("GET", "https://api.spacexdata.com/v3/launches/upcoming", true); 
@@ -65,6 +65,7 @@ request.onload = function() {
 
 request.send();
 
+// Fetch api with image of the day
 
 let request2 = new XMLHttpRequest(); 
 request2.open("GET", "https://api.nasa.gov/planetary/apod?api_key=zfUAs1aa5QK0d4Pm4O0BrNNhGMeIZBUTpY3SMzpG", true); 
@@ -75,9 +76,9 @@ request2.onload = function() {
     }
 request2.send();
 
+// Function for displaying and hiding hamburger menu
 
-
-function myFunction() {
+function openMenu() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
