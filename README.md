@@ -1,2 +1,2 @@
 # spaceX
-Exam for my stuides in Front End Development
+Exam for my studies in Front End Development
