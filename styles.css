@@ -246,7 +246,15 @@ table {
     margin: 15% 0 0 0;
 }
 
-.learn-more-index a {
+.learn-more-index2 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    margin: 10px 0 300px 0;
+}
+
+.learn-more-index a, .learn-more-index2 a {
     text-decoration: none;
     color: white;
     border: 2px solid grey;
@@ -255,14 +263,14 @@ table {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
-.learn-more-index a:hover {
+.learn-more-index a:hover, .learn-more-index2 a:hover {
     
     color: black;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
     transition: 0.5s;
 }
 
-.learn-more-index a:active {
+.learn-more-index a:active, .learn-more-index2 a:active {
     
     color: white;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -271,15 +279,15 @@ table {
 
 .index-text {
     text-align: center;
-    margin: 150px 20% 100px 20%;
+    margin: 150px 20% 10px 20%;
     line-height: 30px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    
+   
 }
 
 .making-history-heading {
     font-size: 3em;
-    margin: 50px 0 80px 0;
+    margin: 20px 0 50px 0;
     padding: 15px 0 0 0;
 }
 
@@ -287,6 +295,29 @@ table {
     font-size: 1.5em;
     margin: 10px 0 30px 0;
     padding: 0 0 15px 0;
+}
+
+.video-info {
+    text-align: center;
+}
+.video {
+    width: 50%;
+    height: auto;
+}
+
+
+.spacex-video {
+   text-align: center;
+
+   
+    
+}
+
+.spacex-video iframe {
+    min-width: 200px;
+    min-height: 200px;
+    max-height: 800px;
+    max-width: 1000px;
 }
 
 /* Upcomming
@@ -409,9 +440,18 @@ table {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
         border: 2px solid grey;
     border-radius: 50px;
-   ;
     margin: 50px 10% 0 10%;
     
+}
+
+.learn-wrap {
+    text-align: center;
+    margin: 100px 0 0 0;
+    font-size: 2em;
+}
+
+ .history-header {
+     
 }
 
 .history-api1 {
@@ -464,6 +504,45 @@ table {
 @media screen and (min-width: 481px) and (max-width: 780px) {
 	/* Index tablet
 ---------*/
+    .index-info-api {
+    margin: 150px 10% 0 10%;
+}
+
+.countdown-wrap {
+    margin: 150px 0 0 0;
+}
+
+.index-text {
+    margin: 50px 0 1000px 0; 
+}
+
+.learn-more-index {
+
+    margin: 25% 0 0 0;
+}
+
+.learn-more-index2 {
+    margin: 10px 0 500px 0;
+}
+
+.index-text {
+    text-align: center;
+    margin: 150px 5% 10px 5%;
+    line-height: 25px; 
+}
+
+.making-history-heading {
+    margin: 20px 0 50px 0;
+    padding: 15px 0 0 0;
+    line-height: 50px;
+}
+
+.making-history-text {
+    font-size: 1.5em;
+    margin: 10px 0 30px 0;
+    padding: 0 0 15px 0;
+}
+
 	/* Responsive nav tablet
 -----------------------*/
 	.topnav a:not(:first-child) {
@@ -582,6 +661,54 @@ table {
 @media screen and (max-width: 480px) {
 	/* Index
 ---------*/
+    
+    .index-info-api {
+    margin: 150px 10% 0 10%;
+}
+
+.countdown-wrap {
+    margin: 150px 0 0 0;
+}
+
+.index-text {
+    margin: 50px 0 1000px 0; 
+}
+
+.learn-more-index {
+
+    margin: 25% 0 0 0;
+}
+
+.learn-more-index2 {
+    margin: 10px 0 500px 0;
+}
+
+.index-text {
+    text-align: center;
+    margin: 150px 5% 10px 5%;
+    line-height: 25px; 
+}
+
+.making-history-heading {
+    margin: 20px 0 50px 0;
+    padding: 15px 0 0 0;
+    line-height: 50px;
+}
+
+.making-history-text {
+    font-size: 1.5em;
+    margin: 10px 0 30px 0;
+    padding: 0 0 15px 0;
+}
+
+.video-info {
+    text-align: center;
+}
+
+.spacex-video {
+    text-align: center;
+    margin: 0 0 10px 0;
+}    
     
 	/* Responsive nav phone
 -----------------------*/
