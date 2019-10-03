@@ -108,6 +108,10 @@ section {
 	display: block;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 	line-height: 1;
 	background-image: url("images/milky-way-2675322_1920.jpg");
@@ -202,6 +206,15 @@ table {
 	background-color: grey;
 }
 
+.nav-current-page {
+    opacity: 0.5;
+}
+
+.nav-current-page:hover {
+    color: inherit;
+    background-color: inherit;
+    opacity: 0.5;
+}
 /* Index
 ---------*/
 
@@ -221,8 +234,60 @@ table {
     font-size: 3em;
 }
 
+.index-text {
+    margin: 50px 0 1000px 0; 
+}
 
+.learn-more-index {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    margin: 15% 0 0 0;
+}
 
+.learn-more-index a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.learn-more-index a:hover {
+    
+    color: black;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    transition: 0.5s;
+}
+
+.learn-more-index a:active {
+    
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    transition: 0.5s;
+}
+
+.index-text {
+    text-align: center;
+    margin: 150px 20% 100px 20%;
+    line-height: 30px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    
+}
+
+.making-history-heading {
+    font-size: 3em;
+    margin: 50px 0 80px 0;
+    padding: 15px 0 0 0;
+}
+
+.making-history-text {
+    font-size: 1.5em;
+    margin: 10px 0 30px 0;
+    padding: 0 0 15px 0;
+}
 
 /* Upcomming
 -------------*/
