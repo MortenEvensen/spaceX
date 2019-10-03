@@ -55,26 +55,53 @@ request.onload = function() {
     for (var i = 0; i < upcommingLaunchSite.length; i++) {
          upcommingLaunchSite[i].innerHTML = api1[i].launch_site.site_name_long;
          }
-    /*
-    document.getElementsByClassName("api1")[0].innerHTML = api1[0].mission_name;
-    document.getElementsByClassName("api2")[0].innerHTML = api1[0].details;
-    console.log(api1);
-    console.log("hei");*/
-
 }
-
 request.send();
 
-// Fetch api with image of the day
-
 let request2 = new XMLHttpRequest(); 
-request2.open("GET", "https://api.nasa.gov/planetary/apod?api_key=zfUAs1aa5QK0d4Pm4O0BrNNhGMeIZBUTpY3SMzpG", true); 
+request2.open("GET", "https://api.spacexdata.com/v3/info", true); 
 
 request2.onload = function() {
     let api2 = JSON.parse(this.response);
-    document.getElementById("api-image").innerHTML = "<iframe src='" + api2.url + "'</iframe>"
-    }
+    document.getElementsByClassName("index-info-api")[0].innerHTML = api2.summary;  
+    console.log(api2.summary);
+}
 request2.send();
+
+// Fetch api with history
+
+let request3 = new XMLHttpRequest(); 
+request3.open("GET", "https://api.spacexdata.com/v3/history", true); 
+
+request3.onload = function() {
+    let api3 = JSON.parse(this.response);
+    var historyHeading = document.getElementsByClassName("history-api1");
+    var historyDate = document.getElementsByClassName("history-api2");
+    var historyDetails = document.getElementsByClassName("history-api3");
+
+    let output = ""
+    for (var i = 0; i < api3.length; i++) {
+        output += api3[i].message;
+    }
+// Add mission name from api
+    for (var i = 0; i < historyHeading.length; i++) {
+         historyHeading[i].innerHTML = api3[i].title;
+         }
+// Add details from api
+     for (var i = 0; i < historyDetails.length; i++) {
+         historyDate[i].innerHTML = api3[i].event_date_utc;
+         }
+    // Add details from api
+     for (var i = 0; i < historyDate.length; i++) {
+         historyDetails[i].innerHTML = api3[i].details;
+         }
+     // Add details from api
+  
+}
+    
+request3.send();
+
+
 
 // Function for displaying and hiding hamburger menu
 
