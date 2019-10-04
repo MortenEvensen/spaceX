@@ -323,6 +323,15 @@ table {
 /* Upcomming
 -------------*/
 
+.year, .year2 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.5em;
+}
+.year2 {
+    margin-bottom: 150px;
+}
+
 .index-wrap {
 	display: flex;
 	min-width: 0;
@@ -354,7 +363,6 @@ table {
 .index-right {
 	flex: 5;
 	background-color: none;
-	margin-top: 100px;
 	padding: 0 50px 0 0;
 }
 
