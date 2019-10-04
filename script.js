@@ -56,11 +56,24 @@ request.onload = function () {
 		document.getElementById("countdown").innerHTML = "<p>Next launch into space: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s </p>";
 		if (timeDifference < 0) {
 			clearInterval(x);
-			document.getElementById("demo").innerHTML = "EXPIRED";
+			document.getElementById("countdown").innerHTML = "EXPIRED";
 		}
+        
+		
 	}, 1000);
 }
 request.send();
+
+
+
+function myFunction() { var xz = document.getElementsByClassName("api6")[1];
+
+for (var i; i < xz.length; i++) {
+    xz[i].innerHTML = "<p>Hei</p>";
+}
+}
+
+        
 
 let request2 = new XMLHttpRequest();
 request2.open("GET", "https://api.spacexdata.com/v3/info", true);
@@ -93,7 +106,7 @@ request3.onload = function () {
 	}
 	// Add details from api
 	for (var i = 0; i < historyDetails.length; i++) {
-		historyDate[i].innerHTML = api3[i].event_date_utc;
+		historyDate[i].innerHTML = "<p>Date: " + api3[i].event_date_utc + "</p>";
 	}
 	// Add details from api
 	for (var i = 0; i < historyDate.length; i++) {
@@ -104,6 +117,39 @@ request3.onload = function () {
 }
 
 request3.send();
+
+// Fetch api with history
+
+let request4 = new XMLHttpRequest();
+request4.open("GET", "https://api.spacexdata.com/v3/missions", true);
+
+request4.onload = function () {
+	let api4 = JSON.parse(this.response);
+	var missionHeading = document.getElementsByClassName("mission-api1");
+	var missionDate = document.getElementsByClassName("mission-api2");
+	var missionDetails = document.getElementsByClassName("mission-api3");
+
+	let output = ""
+	for (var i = 0; i < api4.length; i++) {
+		output += api4[i].message;
+	}
+	// Add mission name from api
+	for (var i = 0; i < missionHeading.length; i++) {
+		missionHeading[i].innerHTML = "<p>" + api4[i].mission_name + "</p>";
+	}
+	// Add details from api
+	for (var i = 0; i < missionDetails.length; i++) {
+		missionDate[i].innerHTML = "<p>" + api4[i].description + "</p>";
+	}
+	// Add details from api
+	for (var i = 0; i < missionDate.length; i++) {
+		missionDetails[i].innerHTML = "<a  href='" + api4[i].website + "'>Learn more</a>";
+	}
+	// Add details from api
+console.log(missionHeading)[i];
+}
+
+request4.send();
 
 
 // Function for displaying and hiding hamburger menu
