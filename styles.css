@@ -547,6 +547,11 @@ table {
     width: 100%;
 }
 
+.error{
+    color: red;
+    display: none;
+}
+
 /* Tablets
 ---------*/
 

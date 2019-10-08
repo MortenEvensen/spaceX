@@ -31,13 +31,16 @@
         <form>
             <label class="input">First Name:</label>
             <input class="input"  type="text" id="first-name" name="firstname" placeholder="Your first name..." required>
+            <span class="error" id="firstNameError">This field cannot be blank</span>
              <label class="input">Last Name:</label>
             <input class="input" type="text" id="last-name" name="lastname" placeholder="Your last name..." required>
+             <span class="error" id="lastNameError">This field cannot be blank</span>
             <label class="input">e-mail:</label>
             <input class="input" type="email" id="email" name="email" placeholder="email..." required>
+             <span class="error" id="emailError">Please enter a correct email address</span>
             <label class="input">Subject</label>
-            <textarea class="input" id="subject" name="subject" placeholder="Your question..." style="height: 200px" required></textarea>
-            <input type="submit" value="submit">
+            <textarea class="input" id="subject" name="subject" placeholder="Your question..." style="height: 200px"></textarea>
+            <button type="submit" value="submit" id="submit-contact">Submit<i class="fa fa-paper-plane" aria-hidden="true"></i></button>
         </form>
     </div>
         </div>
