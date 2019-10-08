@@ -54,7 +54,7 @@ request.onload = function () {
 		var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
 		document.getElementById("countdown").innerHTML = "<p>Next launch into space: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s </p>";
-		if (timeDifference < 0) {
+		if (timeDifference <= 0) {
 			clearInterval(x);
 			document.getElementById("countdown").innerHTML = "EXPIRED";
 		}
