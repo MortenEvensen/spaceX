@@ -234,6 +234,16 @@ table {
     font-size: 3em;
 }
 
+#countdown a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#countdown a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .index-text {
     margin: 50px 0 1000px 0; 
 }
@@ -323,6 +333,23 @@ table {
 /* Upcomming
 -------------*/
 
+/* New concept
+-------------*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+/* New concept
+-------------*/
+
 .year, .year2 {
     text-align: center;
     margin: 20px 0 0 0;
@@ -390,7 +417,16 @@ table {
 	padding: 5px 20px 5px 20px;
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 	max-height: 300px;
-	overflow: scroll;
+}
+
+.content-1:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.content-1:active {
+    opacity: 0.5;
+    transition: 0.2s;
 }
 
 .content-1-1 {
@@ -463,7 +499,8 @@ table {
 
 .history-text {
     height: 50px;
-    overflow: hidden; 
+    overflow: hidden;
+    padding: 0 0 10px 0;
 }
 
 .history-wrap:hover {
@@ -518,6 +555,9 @@ table {
     color: white;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     transition: 0.5s;
+}
+.ps {
+    text-align: center;
 }
 /* Contact
 -------------*/
@@ -665,6 +705,7 @@ table {
 	}
 	#main-heading {
 		margin: 0 0 0px 0;
+        font-size: 2.5em;
 	}
 	a.nav-element {
 		padding: 80px 0 20px 0;
@@ -737,9 +778,16 @@ table {
 /* Learn more tablet
 -------------------*/
     .learn-content-wrap {
-        flex-direction: column;
+        flex-direction: column-reverse;
+}
+    
+    .learn-content-left {
+    flex
 }
 
+     .learn-content-right {
+        
+    }
 .history-wrap {
     margin: 25px 5% 0 5%;
 }
@@ -826,7 +874,8 @@ table {
 }
 
 .countdown-wrap {
-    margin: 150px 0 0 0;
+    margin: 50px 0 0 0;
+    font-size: 2em;
 }
 
 .index-text {
@@ -876,7 +925,7 @@ table {
 		text-align: center;
 	}
 	a.nav-element {
-		padding: 70px 0 20px 0;
+		padding: 80px 0 20px 0;
 		font-size: 2em;
 	}
 	.topnav a:not(:first-child) {
@@ -902,11 +951,9 @@ table {
 	}
 	#main-heading {
 		margin: 0 0 0px 0;
+        font-size: 2.5em;
 	}
-	a.nav-element {
-		padding: 70px 0 20px 0;
-		font-size: 2em;
-	}
+	
 	.nav-element {
 		border: none;
 		margin: 0 0 0 0;
@@ -927,19 +974,21 @@ table {
 ------------------*/
     
 	.index-left1 {
-		flex: 0.1;
+		flex: none;
+        display: none;
 	}
 	.index-right1 {
-		flex: 0.1;
+		flex: none;
+        display: none;
 	}
 	.index-left {
-		padding: 0 0 0 10px;
+		padding: 0 10px 0 10px;
 	}
 	.index-right {
-		padding: 0 10px 0 0;
+		padding: 0 10px 0 10px;
 	}
 	.upcomming-heading {
-		margin: 0px 0 0 0;
+		margin: 80px 0 0 0;
 	}
 	.content-1 {
 		border-radius: 40px;
@@ -951,12 +1000,13 @@ table {
 	}
 	.content-1-1 h3 {
 		font-size: 1.2em;
-		padding: 0 0 10px 0;
+		padding: 0 5px 10px 5px;
+        font-size: 16px;
 	}
 	.content-1-1 p {
 		padding: 0 0 10px 0;
 		line-height: 20px;
-		font-size: 13px;
+		font-size: 12px;
 	}
 	.learn-more-button {
 		color: inherit;
@@ -981,7 +1031,7 @@ table {
 /* Learn more phone
 -------------------*/
      .learn-content-wrap {
-        flex-direction: column;
+        flex-direction: column-reverse;
 }
 
 .history-wrap {
@@ -1006,6 +1056,7 @@ table {
 
 .history-api1, .mission-api1 {
     padding: 10px 0 10px 0;
+    padding: 0 15px;
     font-size: 1.5em;
     text-align: center;
     border-bottom: 1px solid grey;
