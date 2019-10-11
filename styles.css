@@ -343,7 +343,7 @@ table {
   left: 0;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
+  
   transition: 0.5s;
 }
 /* New concept
@@ -456,27 +456,83 @@ table {
 }
 
 .launch-date {
-	margin: 212px 0 0 0;
+	margin: 200px 0 0 1px;
 	border-bottom: 3px solid grey;
-	font-size: 12px;
+	
 }
 
 .launch-date2 {
-	margin: 250px 0 0 0;
+	margin: 245px 0px 0 1px;
 	border-bottom: 3px solid grey;
 }
 
 .launch-date3 {
-	margin: 340px 0 0 0;
+	margin: 340px 0 0 1px;
 	border-bottom: 3px solid grey;
 }
 
 .launch-date4 {
-	margin: 250px 0 0 0;
+	margin: 250px 0px 0 1px;
 	border-bottom: 3px solid grey;
 }
 
+.content-1-2 {
+	text-align: center;
+	color: whitesmoke;
+    overflow: hidden;
+}
 
+.boxApi1{
+    font-size: 3em;
+}
+
+.boxApi2 {
+    font-size: 2em;
+    padding: 50px 15% 0 15%;
+    margin: 50px 100px 50px 100px;
+}
+
+.boxApi3 {
+    font-size: 2em;
+    padding: 50px 20% 0 20%; 
+}
+
+.boxApi4 {
+    font-size: 2em;
+    padding: 50px 20% 0 20%; 
+}
+
+.boxApi5 {
+    font-size: 2em;
+    padding: 50px 20% 0 20%; 
+}
+
+.closebtn {
+    position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.closebtn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.closebtn:active {
+    opacity: 0.3;
+}
+
+.phoneApi3 p{
+        visibility: collapse;
+    font-size: 0px;
+    line-height: 0;
+    margin: 0;
+    padding: 0; 
+    }      
 /* Learn more
 -------------*/
 
@@ -770,18 +826,69 @@ table {
 }
 
 .launch-date2 {
-	margin: 250px 0 0 0;
+	margin: 265px 0 0 0;
 	border-bottom: 3px solid grey;
+    font-size: 12px;
 }
 	.launch-date3 {
 	margin: 340px 0 0 0;
 	border-bottom: 3px solid grey;
+        font-size: 12px;
 }
 
 .launch-date4 {
-	margin: 250px 0 0 0;
+	margin: 265px 0 0 0;
 	border-bottom: 3px solid grey;
+    font-size: 12px;
 }
+    
+.content-1-2 {
+	text-align: center;
+	color: whitesmoke;
+    overflow: hidden;
+}
+
+.boxApi1{
+    font-size: 2em;
+    margin: 30px 0 0 0;
+}
+
+.boxApi2 {
+    font-size: 1.5em;
+    padding: 50px 5% 0 5%;
+    margin: 50px 10px 30px 10px;
+    line-height: 1.2;
+}
+
+.boxApi3 {
+    font-size: 1.5em;
+    padding: 30px 20% 0 20%; 
+}
+
+.boxApi4 {
+    font-size: 1.5em;
+    padding: 30px 20% 0 20%; 
+}
+
+.boxApi5 {
+    font-size: 1.5em;
+    padding: 30px 5% 0 5%; 
+}
+
+.closebtn {
+  top: 20px;
+  right: 15px;
+  font-size: 50px;
+}
+
+.phoneApi3 p{
+        visibility: collapse;
+    font-size: 0px;
+    line-height: 0;
+    margin: 0;
+    padding: 0; 
+    }    
+    
 /* Learn more tablet
 -------------------*/
     .learn-content-wrap {
@@ -990,10 +1097,13 @@ table {
 	}
 	.index-left {
 		padding: 0 10px 0 10px;
+        border-right: 1px solid white;
 	}
 	.index-right {
 		padding: 0 10px 0 10px;
+        border-left: 1px solid white;
 	}
+    
 	.upcomming-heading {
 		margin: 80px 0 0 0;
 	}
@@ -1002,11 +1112,11 @@ table {
 		padding: 10px 0 0 0;
 	}
 	.content-1-1 {
-		min-height: 400px;
-		max-height: 400px;
+		min-height: 250px;
+		max-height: 300px;
 	}
 	.content-1-1 h3 {
-		font-size: 1.2em;
+		
 		padding: 0 5px 10px 5px;
         font-size: 16px;
 	}
@@ -1035,6 +1145,56 @@ table {
 	.launch-date4 {
 		margin: 370px 0 0 0;
 	}
+    
+    .content-1-2 {
+	text-align: center;
+	color: whitesmoke;
+    overflow: scroll;
+}
+
+.boxApi1{
+    font-size: 1.5em;
+    margin: 20px 0 0 0;
+}
+
+.boxApi2 {
+    font-size: 1.1em;
+    padding: 20px 5% 0 5%;
+    margin: 20px 10px 10px 10px;
+    line-height: 1.2;
+}
+
+.boxApi3 {
+    font-size: 1.2em;
+    padding: 15px 20% 0 20%; 
+}
+
+.boxApi4 {
+    font-size: 1.2em;
+    padding: 15px 20% 0 20%; 
+}
+
+.boxApi5 {
+    font-size: 1.2em;
+    padding: 15px 5% 0 5%; 
+}
+
+.closebtn {
+  top: 12px;
+  right: 15px;
+  font-size: 40px;
+}
+    
+    .year2 {
+    margin-bottom: 0px;
+}
+    
+    .phoneApi3 p{
+        visibility: visible;
+    font-size: 12px;
+    line-height: 1.1;
+     
+    }   
 /* Learn more phone
 -------------------*/
      .learn-content-wrap {

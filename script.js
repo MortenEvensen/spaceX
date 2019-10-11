@@ -25,6 +25,8 @@ request.onload = function () {
 	var upcommingRocketId2 = document.getElementsByClassName("boxApi4");
 	var upcommingLaunchSite2 = document.getElementsByClassName("boxApi5");
     
+    var upcommingDate3 = document.getElementsByClassName("phoneApi3");
+    
 	let output = ""
 	for (var i = 0; i < api1.length; i++) {
 		output += "<div>" + api1[i].message + "</div>";
@@ -71,6 +73,11 @@ request.onload = function () {
 	}
 	for (var i = 0; i < upcommingLaunchSite2.length; i++) {
 		upcommingLaunchSite2[i].innerHTML = "<p>Launch site : " + api1[i].launch_site.site_name_long + "</p>";
+	}
+    
+    for (var i = 0; i < upcommingDate3.length; i++) {
+		upcommingDate3[i].innerHTML = "<p>Launch date: " + api1[i].launch_date_local + "<p/>";
+        
 	}
     
 	// Use upcomming date to count down next launch on index page
