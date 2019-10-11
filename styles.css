@@ -114,9 +114,8 @@ html {
 
 body {
 	line-height: 1;
-	background-image: url("images/milky-way-2675322_1920.jpg");
+	background-image: url("images/milky-way-compressed.jpg");
 	background-repeat: repeat-y;
-	background-size: 100%;
 	color: white;
 	font-family: "gill sans", sans-serif;
 }
@@ -356,7 +355,7 @@ table {
     font-size: 1.5em;
 }
 .year2 {
-    margin-bottom: 150px;
+    margin-bottom: 250px;
 }
 
 .index-wrap {
@@ -434,10 +433,11 @@ table {
 	color: whitesmoke;
 	min-height: 200px;
 	max-height: 200px;
+    overflow: hidden;
 }
 
 .content-1-1 h3 {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	padding: 0 0 15px 0;
 }
 
@@ -456,23 +456,23 @@ table {
 }
 
 .launch-date {
-	margin: 150px 0 0 0;
+	margin: 212px 0 0 0;
 	border-bottom: 3px solid grey;
 	font-size: 12px;
 }
 
 .launch-date2 {
-	margin: 270px 0 0 0;
+	margin: 250px 0 0 0;
 	border-bottom: 3px solid grey;
 }
 
 .launch-date3 {
-	margin: 240px 0 0 0;
+	margin: 340px 0 0 0;
 	border-bottom: 3px solid grey;
 }
 
 .launch-date4 {
-	margin: 270px 0 0 0;
+	margin: 250px 0 0 0;
 	border-bottom: 3px solid grey;
 }
 
@@ -743,8 +743,8 @@ table {
 		padding: 10px 0 0 0;
 	}
 	.content-1-1 {
-		min-height: 400px;
-		max-height: 400px;
+		min-height: 200px;
+		max-height: 200px;
 	}
 	.content-1-1 h3 {
 		font-size: 1.2em;
@@ -764,17 +764,24 @@ table {
 		margin: 2px 0 2px 0;
 	}
 	.launch-date {
-		margin: 250px 0 0 0;
-	}
-	.launch-date2 {
-		margin: 370px 0 0 0;
-	}
+	margin: 212px 0 0 0;
+	border-bottom: 3px solid grey;
+	font-size: 12px;
+}
+
+.launch-date2 {
+	margin: 250px 0 0 0;
+	border-bottom: 3px solid grey;
+}
 	.launch-date3 {
-		margin: 300px 0 0 0;
-	}
-	.launch-date4 {
-		margin: 370px 0 0 0;
-	}
+	margin: 340px 0 0 0;
+	border-bottom: 3px solid grey;
+}
+
+.launch-date4 {
+	margin: 250px 0 0 0;
+	border-bottom: 3px solid grey;
+}
 /* Learn more tablet
 -------------------*/
     .learn-content-wrap {
