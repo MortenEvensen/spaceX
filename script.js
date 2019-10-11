@@ -48,7 +48,7 @@ request.onload = function () {
 		upcommingRocketId[i].innerHTML = "<p>Rocket Name: " + api1[i].rocket.rocket_name + "</p>";
 	}
 	for (var i = 0; i < upcommingLaunchSite.length; i++) {
-		upcommingLaunchSite[i].innerHTML = "<p>Launch site: " + api1[i].launch_site.site_name_long + "</p>";
+		upcommingLaunchSite[i].innerHTML = "<p>Launch site: " + api1[i].launch_site.site_name + "</p>";
 	}
 
     // Get info for openBox in upcomming launches

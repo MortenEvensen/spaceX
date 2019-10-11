@@ -260,15 +260,15 @@ table {
     text-align: center;
     font-size: 2em;
     text-decoration: none;
-    margin: 10px 0 300px 0;
+    margin: 10px 0 50px 0;
 }
 
 .learn-more-index3 {
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
     text-decoration: none;
-    margin: 10px 0 30px 0;
+    margin: 20px 0 30px 0;
     
 }   
 
@@ -282,14 +282,12 @@ table {
 }
 
 .learn-more-index a:hover, .learn-more-index2 a:hover, .learn-more-index3 a:hover  {
-    
     color: black;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
     transition: 0.5s;
 }
 
 .learn-more-index a:active, .learn-more-index2 a:active, .learn-more-index3 a:active  {
-    
     color: white;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     transition: 0.5s;
@@ -300,13 +298,13 @@ table {
     margin: 150px 20% 10px 20%;
     line-height: 30px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-   
 }
 
 .making-history-heading {
-    font-size: 3em;
+    font-size: 60px;
     margin: 20px 0 50px 0;
     padding: 15px 0 0 0;
+    line-height: 1;
 }
 
 .making-history-text {
@@ -318,6 +316,7 @@ table {
 .video-info {
     text-align: center;
 }
+
 .video {
     width: 50%;
     height: auto;
@@ -326,9 +325,6 @@ table {
 
 .spacex-video {
    text-align: center;
-
-   
-    
 }
 
 .spacex-video iframe {
@@ -352,7 +348,6 @@ table {
   left: 0;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0, 0.9);
-  
   transition: 0.5s;
 }
 /* New concept
@@ -497,8 +492,8 @@ table {
 
 .boxApi2 {
     font-size: 2em;
-    padding: 50px 15% 0 15%;
-    margin: 50px 100px 50px 100px;
+    padding: 50px 5% 0 5%;
+    margin: 50px 15px 50px 15px;
 }
 
 .boxApi3 {
@@ -675,8 +670,95 @@ table {
     display: none;
 }
 
-/* Tablets
+/* Footer
 ---------*/
+
+.wrap-wrap {
+     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
+}
+
+.footer-wrap {
+   
+    padding: 10px;
+    display: flex;
+}
+
+.footer-copy {
+    text-align: center;
+     padding: 30px 0 20px 1%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-copy a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-copy:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.footer-left {
+    flex: 1;
+    padding: 20px 0 20px 10%;
+    text-align: center;
+}
+
+.follow-footer {
+    padding: 0 0 10px 0;
+}
+
+.footer-right {
+    flex: 1;
+    padding: 20px 10% 20px 0;
+    text-align: center;
+}
+
+.footer-heading {
+    font-size: 30px;
+    font-weight: 100;
+    padding: 10px 0 20px 0;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 15px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* Tablets
+-------------------------*/
 
 @media screen and (min-width: 481px) and (max-width: 780px) {
 	/* Index tablet
@@ -727,11 +809,12 @@ table {
     text-decoration: none;
     margin: 10px 0 50px 0;
 }
+     
     
-.learn-more-index3 {
-    font-size: 1.5em;
-    margin: 50px 0 50px 0;
-}    
+    .learn-more-index3 {
+    margin: 10px 0 50px 0;
+    font-size: 20px;
+}  
     .learn-more-index a, .learn-more-index2 a, .learn-more-index3 a {
     text-decoration: none;
     color: white;
@@ -1285,6 +1368,99 @@ table {
     padding: 0 5% 0 5%;
     font-size: 1.3em;
 }      
+   
+
+/* Footer phone
+-----------------*/    
+    
+.wrap-wrap {
+     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
+}
+
+.footer-wrap {
+   
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footer-left {
+    flex: 1;
+    padding: 20px 0 20px 10%;
+    text-align: center;
+    
+}
+
+.follow-footer {
+    padding: 0 0 10px 0;
+}
+
+.footer-right {
+    flex: 1;
+    padding: 20px 10% 20px 0;
+    text-align: center;
+}
+
+.footer-heading {
+    font-size: 30px;
+    font-weight: 100;
+    padding: 10px 0 20px 0;
+}
+
+.footer-copy {
+    text-align: center;
+     padding: 30px 0 20px 1%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-copy a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-copy:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.2s;
+}    
+    
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 15px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}    
     
 /* Phone end bracket!
 -----------------*/
