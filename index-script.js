@@ -7,3 +7,11 @@ request2.onload = function () {
 	console.log(api2.summary);
 }
 request2.send();
+
+function openBoxIndex() {
+    document.getElementById("boxIndex").style.width = "100%";
+};
+
+function closeBoxIndex() {
+    document.getElementById("boxIndex").style.width = "0%";
+};

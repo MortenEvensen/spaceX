@@ -114,7 +114,7 @@ html {
 
 body {
 	line-height: 1;
-	background-image: url("images/milky-way-compressed.jpg");
+	background-image: url("images/milky-way-2675322_1920-compressor.jpg");
 	background-repeat: repeat-y;
 	color: white;
 	font-family: "gill sans", sans-serif;
@@ -150,8 +150,12 @@ table {
 
 .topnav {
 	border: 1px solid black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 	display: flex;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3));
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
+    z-index: 3;
 }
 
 .topnav a {
@@ -162,6 +166,7 @@ table {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 27px;
+    
 }
 
 .topnav .icon {
@@ -197,7 +202,7 @@ table {
 .nav-element:active {
 	color: white;
 	background-color: black;
-	transition: 0s;
+	transition: 0.1s;
 	opacity: 0.7;
 }
 
@@ -208,6 +213,7 @@ table {
 .nav-current-page {
     opacity: 0.5;
 }
+
 
 .nav-current-page:hover {
     color: inherit;
@@ -233,15 +239,20 @@ table {
     font-size: 3em;
 }
 
-#countdown a {
-    text-decoration: none;
-    color: inherit;
-}
 
-#countdown a:hover {
-    cursor: pointer;
-    opacity: 0.8;
-}
+
+   #countdown:hover {
+        opacity: 0.7;
+        cursor: pointer;
+        transition: 0.2s;
+            
+    } 
+
+#countdown:active {
+        opacity: 0.3;
+        transition: 0.1s;
+            
+    } 
 
 .index-text {
     margin: 50px 0 1000px 0; 
@@ -348,6 +359,37 @@ table {
 .contact:hover {
     opacity: 0.7;
     transition: 0.2s;
+}
+
+
+.indexApi1{
+    font-size: 35px;
+    margin: 150px 0 0 0;
+}
+
+.indexApi2 {
+    font-size: 25px;
+    padding: 50px 5% 0 5%;
+    margin: 20px 15px 20px 15px;
+    font-weight: 100;
+}
+
+.indexApi3 {
+    font-size: 20px;
+    padding: 20px 20% 0 20%; 
+    font-weight: 100;
+}
+
+.indexApi4 {
+    font-size: 20px;
+    padding: 20px 20% 0 20%; 
+    font-weight: 100;
+}
+
+.indexApi5 {
+    font-size: 20px;
+    padding: 20px 20% 0 20%; 
+    font-weight: 100;
 }
 
 /* Upcomming
@@ -481,6 +523,8 @@ table {
 	
 }
 
+
+
 .launch-date2 {
 	margin: 245px 0px 0 1px;
 	border-bottom: 3px solid grey;
@@ -504,32 +548,37 @@ table {
 
 .boxApi1{
     font-size: 3em;
+    margin: 150px 0 0 0;
 }
 
 .boxApi2 {
-    font-size: 2em;
+    font-size: 25px;
     padding: 50px 5% 0 5%;
-    margin: 50px 15px 50px 15px;
+    margin: 20px 15px 20px 15px;
+    font-weight: 100;
 }
 
 .boxApi3 {
-    font-size: 2em;
-    padding: 50px 20% 0 20%; 
+    font-size: 20px;
+    padding: 20px 20% 0 20%; 
+    font-weight: 100;
 }
 
 .boxApi4 {
-    font-size: 2em;
-    padding: 50px 20% 0 20%; 
+    font-size: 20px;
+    padding: 20px 20% 0 20%; 
+    font-weight: 100;
 }
 
 .boxApi5 {
-    font-size: 2em;
-    padding: 50px 20% 0 20%; 
+    font-size: 20px;
+    padding: 20px 20% 0 20%; 
+    font-weight: 100;
 }
 
 .closebtn {
     position: absolute;
-  top: 20px;
+  top: 120px;
   right: 45px;
   font-size: 60px;
     text-decoration: none;
@@ -691,6 +740,7 @@ table {
 
 .wrap-wrap {
      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
+    margin: 50px 0 0 0;
 }
 
 .footer-wrap {
@@ -805,7 +855,8 @@ table {
 .countdown-wrap {
     margin: 150px 0 0 0;
 }
-
+  
+    
 .index-text {
     margin: 50px 0 1000px 0; 
 }
@@ -862,6 +913,36 @@ table {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
+   .indexApi1{
+    font-size: 20px;
+    margin: 120px 0 0 0;
+    
+}
+
+.indexApi2 {
+    font-size: 14px;
+    padding: 5px 5% 0 5%;
+    margin: 10px 10px 5px 10px;
+    line-height: 1.2;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.indexApi3 {
+    font-size: 14px;
+    padding: 10px 20% 0 20%; 
+}
+
+.indexApi4 {
+    font-size: 14px;
+    padding: 10px 20% 0 20%; 
+}
+
+.indexApi5 {
+    font-size: 14px;
+    padding: 10px 5% 0 5%; 
+}
+    
 	/* Responsive nav tablet
 -----------------------*/
 	.topnav a:not(:first-child) {
@@ -872,12 +953,12 @@ table {
 		display: block;
 	}
 	.topnav.responsive {
-		position: relative;
+		position: fixed;
 	}
 	.topnav.responsive a.icon {
-		position: absolute;
-		right: 10px;
-		top: 0;
+		position: fixed;
+		right: 9px;
+		top: 1px;
 	}
 	.topnav.responsive a {
 		margin: 0 0 0 0;
@@ -890,13 +971,15 @@ table {
         font-size: 2.5em;
 	}
 	a.nav-element {
-		padding: 80px 0 20px 0;
+		padding: 80px 0 40px 0;
 		font-size: 2em;
 	}
 	.nav-element {
 		border: none;
 		margin: 0 0 0 0;
+        
 	}
+  
 	.nav-element:hover {
 		color: white;
 		background-color: inherit;
@@ -915,7 +998,7 @@ table {
 		padding: 0 10px 0 0;
 	}
 	.upcomming-heading {
-		margin: 0px 0 0 0;
+		margin: 150px 0 0 0;
 	}
 	.content-1 {
 		border-radius: 40px;
@@ -973,7 +1056,7 @@ table {
 
 .boxApi1{
     font-size: 20px;
-    margin: 30px 0 0 0;
+    margin: 120px 0 0 0;
     
 }
 
@@ -1002,7 +1085,7 @@ table {
 }
 
 .closebtn {
-  top: 20px;
+  top: 80px;
   right: 15px;
   font-size: 30px;
 }
@@ -1019,6 +1102,7 @@ table {
 -------------------*/
     .learn-content-wrap {
         flex-direction: column-reverse;
+        margin: 50px 0 0 0;
 }
     
     .learn-content-left {
@@ -1201,6 +1285,10 @@ table {
 	/* Index
 ---------*/
     
+    .index-content {
+        margin: 140px 0 0 0;
+    }
+    
     .index-info-api {
     margin: 50px 10% 0 10%;
         font-size: 1.2em;
@@ -1261,6 +1349,35 @@ table {
     text-align: center;
     margin: 0 0 10px 0;
 }    
+   
+    .indexApi1{
+    font-size: 20px;
+    margin: 120px 0 0 0;
+}
+
+.indexApi2 {
+    font-size: 12px;
+    padding: 10px 5% 0 5%;
+    margin: 10px 10px 10px 10px;
+    line-height: 1.2;
+    max-height: 100px;
+    overflow: scroll;
+}
+
+.indexApi3 {
+    font-size: 12px;
+    padding: 10px 20% 0 20%; 
+}
+
+.indexApi4 {
+    font-size: 12px;
+    padding: 10px 20% 0 20%; 
+}
+
+.indexApi5 {
+    font-size: 12px;
+    padding: 10px 5% 0 5%; 
+}
     
 	/* Responsive nav phone
 -----------------------*/
@@ -1332,7 +1449,7 @@ table {
 	}
     
 	.upcomming-heading {
-		margin: 80px 0 0 0;
+		margin: 150px 0 0 0;
 	}
 	.content-1 {
 		border-radius: 40px;
@@ -1382,7 +1499,7 @@ table {
 
 .boxApi1{
     font-size: 20px;
-    margin: 50px 0 0 0;
+    margin: 120px 0 0 0;
 }
 
 .boxApi2 {
@@ -1410,7 +1527,7 @@ table {
 }
 
 .closebtn {
-  top: 20px;
+  top: 80px;
   right: 15px;
   font-size: 30px;
 }
@@ -1433,6 +1550,7 @@ table {
 -------------------*/
      .learn-content-wrap {
         flex-direction: column-reverse;
+         margin: 100px 0 0 0;
 }
 
 .history-wrap {

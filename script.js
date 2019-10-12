@@ -27,6 +27,12 @@ request.onload = function () {
     
     var upcommingDate3 = document.getElementsByClassName("phoneApi3");
     
+    var upcommingHeadingIndex = document.getElementsByClassName("indexApi1");
+	var upcommingDetailsIndex = document.getElementsByClassName("indexApi2");
+	var upcommingDateIndex = document.getElementsByClassName("indexApi3");
+	var upcommingRocketIdIndex = document.getElementsByClassName("indexApi4");
+	var upcommingLaunchSiteIndex = document.getElementsByClassName("indexApi5");
+    
 	let output = ""
 	for (var i = 0; i < api1.length; i++) {
 		output += "<div>" + api1[i].message + "</div>";
@@ -80,6 +86,29 @@ request.onload = function () {
         
 	}
     
+    for (var i = 0; i < upcommingHeadingIndex.length; i++) {
+		upcommingHeadingIndex[i].innerHTML = "<p>Mission name: " +  api1[i].mission_name + "</p>";
+	}
+	// Add details from api
+	for (var i = 0; i < upcommingDetailsIndex.length; i++) {
+		upcommingDetailsIndex[i].innerHTML = "<p>About the mission: " + api1[i].details + "</p>";
+        if (upcommingDetailsIndex[i] == null) {
+         upcommingDetailsIndex[i].innerHTML = "<p></p>";   
+        }
+	} 
+	// Add details from api
+	for (var i = 0; i < upcommingDateIndex.length; i++) {
+		upcommingDateIndex[i].innerHTML = "<p>Launch date: " + api1[i].launch_date_local + "<p/>";
+        
+	}
+	// Add details from api
+	for (var i = 0; i < upcommingRocketIdIndex.length; i++) {
+		upcommingRocketIdIndex[i].innerHTML = "<p>Rocket name: " + api1[i].rocket.rocket_name + "</p>";
+	}
+	for (var i = 0; i < upcommingLaunchSiteIndex.length; i++) {
+		upcommingLaunchSiteIndex[i].innerHTML = "<p>Launch site : " + api1[i].launch_site.site_name_long + "</p>";
+	}
+    
 	// Use upcomming date to count down next launch on index page
 
 	var countDown = new Date(api1[1].launch_date_local).getTime();
@@ -93,7 +122,7 @@ request.onload = function () {
 		var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
 		var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-		document.getElementById("countdown").innerHTML = "<a href='https://spaceflightnow.com/launch-schedule/'<p>Next launch into space: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s </p></a>";
+		document.getElementById("countdown").innerHTML = "<p>Next launch into space: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s </p>";
 		if (timeDifference <= 0) {
 			clearInterval(x);
 			document.getElementById("countdown").innerHTML = "EXPIRED";
