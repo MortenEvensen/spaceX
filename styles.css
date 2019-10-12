@@ -269,8 +269,13 @@ table {
     font-size: 1em;
     text-decoration: none;
     margin: 20px 0 30px 0;
+    padding: 5px 0;
     
 }   
+
+.or {
+        margin: 10px 0;
+    }  
 
 .learn-more-index a, .learn-more-index2 a, .learn-more-index3 a {
     text-decoration: none;
@@ -325,6 +330,7 @@ table {
 
 .spacex-video {
    text-align: center;
+    margin: 0 0 30px 0;
 }
 
 .spacex-video iframe {
@@ -332,6 +338,16 @@ table {
     min-height: 200px;
     max-height: 800px;
     max-width: 1000px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact:hover {
+    opacity: 0.7;
+    transition: 0.2s;
 }
 
 /* Upcomming
@@ -723,15 +739,6 @@ table {
     padding: 10px 0 20px 0;
 }
 
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 15px;
-  border-radius: 50%;
-}
 
 .fa:hover {
     opacity: 0.7;
@@ -740,22 +747,50 @@ table {
 .fa-facebook {
   background: #3B5998;
   color: white;
+     padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 15px;
+  border-radius: 50%;
 }
 
 .fa-twitter {
   background: #55ACEE;
   color: white;
+     padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 15px;
+  border-radius: 50%;
 }
 
 .fa-instagram {
   background: #125688;
   color: white;
+     padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 15px;
+  border-radius: 50%;
 }
 
 .fa-snapchat-ghost {
   background: #fffc00;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+     padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 15px;
+  border-radius: 50%;
 }
 /* Tablets
 -------------------------*/
@@ -815,6 +850,9 @@ table {
     margin: 10px 0 50px 0;
     font-size: 20px;
 }  
+    .or {
+        margin: 5px 0;
+    }  
     .learn-more-index a, .learn-more-index2 a, .learn-more-index3 a {
     text-decoration: none;
     color: white;
@@ -866,9 +904,6 @@ table {
 		opacity: 0.7
 	}
 	.nav-element:active {
-		color: white;
-		background-color: inherit;
-		transition: 0s;
 		opacity: 0.5;
 	}
 	/* Upcomming tablet
@@ -937,36 +972,39 @@ table {
 }
 
 .boxApi1{
-    font-size: 2em;
+    font-size: 20px;
     margin: 30px 0 0 0;
+    
 }
 
 .boxApi2 {
-    font-size: 1.5em;
-    padding: 50px 5% 0 5%;
-    margin: 50px 10px 30px 10px;
+    font-size: 14px;
+    padding: 5px 5% 0 5%;
+    margin: 10px 10px 5px 10px;
     line-height: 1.2;
+    max-height: 200px;
+    overflow: scroll;
 }
 
 .boxApi3 {
-    font-size: 1.5em;
-    padding: 30px 20% 0 20%; 
+    font-size: 14px;
+    padding: 10px 20% 0 20%; 
 }
 
 .boxApi4 {
-    font-size: 1.5em;
-    padding: 30px 20% 0 20%; 
+    font-size: 14px;
+    padding: 10px 20% 0 20%; 
 }
 
 .boxApi5 {
-    font-size: 1.5em;
-    padding: 30px 5% 0 5%; 
+    font-size: 14px;
+    padding: 10px 5% 0 5%; 
 }
 
 .closebtn {
   top: 20px;
   right: 15px;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .phoneApi3 p{
@@ -1055,6 +1093,98 @@ table {
 .contact-text {
     padding: 0 5% 0 5%;
     font-size: 1.3em;
+}  
+    
+    /* Footer phone
+-----------------*/    
+    
+.wrap-wrap {
+     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
+}
+
+.footer-wrap {
+   
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footer-left {
+    flex: 1;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    
+}
+
+.follow-footer {
+    padding: 0 0 10px 0;
+}
+
+.footer-right {
+    flex: 1;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+.footer-heading {
+    font-size: 30px;
+    font-weight: 100;
+    padding: 10px 0 20px 0;
+}
+
+.footer-copy {
+    text-align: center;
+     padding: 10px 0 20px 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-copy a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-copy:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.2s;
+}    
+    
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 15px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }    
     
 /* Tablets end bracket!
@@ -1091,7 +1221,7 @@ table {
 }
 
 .learn-more-index2 {
-    margin: 10px 0 500px 0;
+    margin: 10px 0 50px 0;
     font-size: 1.5em;
 }
 
@@ -1099,6 +1229,10 @@ table {
     margin: 10px 0 50px 0;
     font-size: 15px;
 }    
+   
+    .or {
+        margin: 5px 0;
+    }    
     
 .index-text {
     text-align: center;
@@ -1175,9 +1309,6 @@ table {
 		opacity: 0.7
 	}
 	.nav-element:active {
-		color: white;
-		background-color: inherit;
-		transition: 0s;
 		opacity: 0.5;
 	}
 /* Upcomming phone
@@ -1210,6 +1341,7 @@ table {
 	.content-1-1 {
 		min-height: 300px;
 		max-height: 320px;
+        overflow: scroll;
 	}
 	.content-1-1 h3 {
 		
@@ -1249,36 +1381,38 @@ table {
 }
 
 .boxApi1{
-    font-size: 1.5em;
-    margin: 20px 0 0 0;
+    font-size: 20px;
+    margin: 50px 0 0 0;
 }
 
 .boxApi2 {
-    font-size: 1.1em;
-    padding: 20px 5% 0 5%;
-    margin: 20px 10px 10px 10px;
+    font-size: 12px;
+    padding: 10px 5% 0 5%;
+    margin: 10px 10px 10px 10px;
     line-height: 1.2;
+    max-height: 100px;
+    overflow: scroll;
 }
 
 .boxApi3 {
-    font-size: 1.2em;
-    padding: 15px 20% 0 20%; 
+    font-size: 12px;
+    padding: 10px 20% 0 20%; 
 }
 
 .boxApi4 {
-    font-size: 1.2em;
-    padding: 15px 20% 0 20%; 
+    font-size: 12px;
+    padding: 10px 20% 0 20%; 
 }
 
 .boxApi5 {
-    font-size: 1.2em;
-    padding: 15px 5% 0 5%; 
+    font-size: 12px;
+    padding: 10px 5% 0 5%; 
 }
 
 .closebtn {
-  top: 12px;
+  top: 20px;
   right: 15px;
-  font-size: 40px;
+  font-size: 30px;
 }
     
     .year2 {
@@ -1388,7 +1522,7 @@ table {
 
 .footer-left {
     flex: 1;
-    padding: 20px 0 20px 10%;
+    padding: 10px 0 10px 0;
     text-align: center;
     
 }
@@ -1399,19 +1533,19 @@ table {
 
 .footer-right {
     flex: 1;
-    padding: 20px 10% 20px 0;
+    padding: 20px 0 10px 0;
     text-align: center;
 }
 
 .footer-heading {
     font-size: 30px;
     font-weight: 100;
-    padding: 10px 0 20px 0;
+    padding: 10px 0 10px 0;
 }
 
 .footer-copy {
     text-align: center;
-     padding: 30px 0 20px 1%;
+     padding: 10px 0 20px 0;
     text-decoration: none;
     color: inherit;
 }
