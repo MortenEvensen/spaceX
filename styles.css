@@ -1089,8 +1089,13 @@ table {
 		cursor: pointer;
 		transition: 0.2s;
 	}
-	.fa {
-		padding: 10px;
+	.fa:hover {
+		opacity: 0.7;
+	}
+	.fa-facebook {
+		background: #3B5998;
+		color: white;
+        padding: 10px;
 		font-size: 30px;
 		width: 20px;
 		text-align: center;
@@ -1098,25 +1103,39 @@ table {
 		margin: 5px 15px;
 		border-radius: 50%;
 	}
-	.fa:hover {
-		opacity: 0.7;
-	}
-	.fa-facebook {
-		background: #3B5998;
-		color: white;
-	}
 	.fa-twitter {
 		background: #55ACEE;
 		color: white;
+        padding: 10px;
+		font-size: 30px;
+		width: 20px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 15px;
+		border-radius: 50%;
 	}
 	.fa-instagram {
 		background: #125688;
 		color: white;
+        padding: 10px;
+		font-size: 30px;
+		width: 20px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 15px;
+		border-radius: 50%;
 	}
 	.fa-snapchat-ghost {
 		background: #fffc00;
 		color: white;
 		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        padding: 10px;
+		font-size: 30px;
+		width: 20px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 15px;
+		border-radius: 50%;
 	}
     
 /* Tablets end bracket!
@@ -1466,8 +1485,13 @@ table {
 		cursor: pointer;
 		transition: 0.2s;
 	}
-	.fa {
-		padding: 10px;
+	.fa:hover {
+		opacity: 0.7;
+	}
+	.fa-facebook {
+		background: #3B5998;
+		color: white;
+        padding: 10px;
 		font-size: 30px;
 		width: 20px;
 		text-align: center;
@@ -1475,25 +1499,39 @@ table {
 		margin: 5px 15px;
 		border-radius: 50%;
 	}
-	.fa:hover {
-		opacity: 0.7;
-	}
-	.fa-facebook {
-		background: #3B5998;
-		color: white;
-	}
 	.fa-twitter {
 		background: #55ACEE;
 		color: white;
+        padding: 10px;
+		font-size: 30px;
+		width: 20px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 15px;
+		border-radius: 50%;
 	}
 	.fa-instagram {
 		background: #125688;
 		color: white;
+        padding: 10px;
+		font-size: 30px;
+		width: 20px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 15px;
+		border-radius: 50%;
 	}
 	.fa-snapchat-ghost {
 		background: #fffc00;
 		color: white;
 		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        padding: 10px;
+		font-size: 30px;
+		width: 20px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 15px;
+		border-radius: 50%;
 	}
 	/* Phone end bracket!
 -----------------*/
